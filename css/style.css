@@ -1,0 +1,47 @@
+header {background-color: rgb(99, 84, 84);
+         min-height: 150px;}
+
+
+.shell { background-color: grey;
+        position: relative;
+        min-height: calc(100vh - 150px);
+        } 
+
+
+.freccia  {width: 150px;
+           height: 150px;
+           background-color: rgb(26, 51, 28);
+           border: 3px solid white;
+           border-radius: 25px;
+           position: fixed;
+           left: 50%;
+           top: 30%;
+           transform: translateX(-50%);}
+
+
+.freccia::after {                
+                 content:"";
+                 border-bottom: 65px solid white;
+                 border-left: 65px solid transparent;
+                 border-right: 65px solid transparent;
+                 position: absolute;
+                 bottom: 10px;
+                 left:10px;
+                 right: 10px;;
+}
+
+
+.box { width: 55%;
+       height: 25%;
+       text-align: center;
+       color: white;
+       line-height: 100px;
+       background-color: rgb(26, 51, 28);
+       border: 3px double red;
+       border-radius: 25px;
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform: translate(-50%, -50%);
+}
+
